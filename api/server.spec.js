@@ -29,8 +29,8 @@ describe('the route handlers', () => {
         });
 
         it('responds with 400 when id does not exist', async () => {
-            const response = await request(server).delete('/1');
-            expect(response.status).toBe(400);
+            const response = await request(server).delete('');
+            expect(response.status).toBe(404);
         });
     })
 })
