@@ -23,7 +23,6 @@ describe('the route handlers', () => {
     });
 
     describe('delete /:id', () => {
-        afterEach(cleanup);
         it('responds with status code 201', async () => {
             const response = await request(server).delete('/1')
             expect(response.status).toBe(202)

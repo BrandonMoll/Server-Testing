@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       filename: './data/rocketLeagueDB.db3'
     },
-    useNullAsDefault = true,
+    useNullAsDefault: true,
     migrations: {
       tableName: './data/migrations'
     },
@@ -18,9 +18,9 @@ module.exports = {
   testing: {
     client: 'sqlite3',
     connection: {
-      filename: './data/test.db3'
+      filename: './data/rocketLeagueDB.db3'
     },
-    useNullAsDefault = true,
+    useNullAsDefault: true,
     migrations: {
       directory: './data/migrations',
     },
